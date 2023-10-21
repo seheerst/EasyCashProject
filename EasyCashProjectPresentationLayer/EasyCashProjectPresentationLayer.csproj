@@ -15,6 +15,17 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EasyCashProjectBusinessLayer\EasyCashProjectBusinessLayer.csproj" />
+    <ProjectReference Include="..\EasyCashProjectDataAccessLayer\EasyCashProjectDataAccessLayer.csproj" />
+    <ProjectReference Include="..\EasyCashProjectDtoLayer\EasyCashProjectDtoLayer.csproj" />
+    <ProjectReference Include="..\EasyCashProjectEntityLayer\EasyCashProjectEntityLayer.csproj" />
   </ItemGroup>
 
 </Project>
