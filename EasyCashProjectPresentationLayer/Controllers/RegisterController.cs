@@ -66,6 +66,8 @@ namespace EasyCashProjectPresentationLayer.Controllers
                     client.Send(mimeMessage);
                     client.Disconnect(true);
 
+                    TempData["Mail"] = user.Email;
+
                     return RedirectToAction("Index", "ConfirmMail");
                 }
                 else
